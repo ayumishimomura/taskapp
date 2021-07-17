@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CE6CE3B3269BD28C007DD4F2 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE3B2269BD28C007DD4F2 /* InputViewController.swift */; };
+		CE6F7CC7269BE97A007086FF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F7CC6269BE97A007086FF /* Task.swift */; };
 		CEDC077B2697F92500510581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC077A2697F92500510581 /* AppDelegate.swift */; };
 		CEDC077D2697F92500510581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC077C2697F92500510581 /* SceneDelegate.swift */; };
 		CEDC077F2697F92500510581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC077E2697F92500510581 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		4E6435F777985B71F9FC0A70 /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
 		B89BC87908CA34F25E6D7FBC /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6CE3B2269BD28C007DD4F2 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		CE6F7CC6269BE97A007086FF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CEDC07772697F92500510581 /* taskapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC077A2697F92500510581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC077C2697F92500510581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		CEDC076E2697F92400510581 = {
 			isa = PBXGroup;
 			children = (
+				CE6F7CC6269BE97A007086FF /* Task.swift */,
 				CEDC07792697F92500510581 /* taskapp */,
 				CEDC07782697F92500510581 /* Products */,
 				D5483B254389214205AD946F /* Pods */,
@@ -91,7 +94,6 @@
 				B89BC87908CA34F25E6D7FBC /* Pods-taskapp.debug.xcconfig */,
 				4E6435F777985B71F9FC0A70 /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,6 +213,7 @@
 			files = (
 				CEDC077F2697F92500510581 /* ViewController.swift in Sources */,
 				CEDC077B2697F92500510581 /* AppDelegate.swift in Sources */,
+				CE6F7CC7269BE97A007086FF /* Task.swift in Sources */,
 				CEDC077D2697F92500510581 /* SceneDelegate.swift in Sources */,
 				CE6CE3B3269BD28C007DD4F2 /* InputViewController.swift in Sources */,
 			);

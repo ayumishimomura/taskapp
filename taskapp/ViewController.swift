@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         // メソッドの呼び出し
         searchBar.delegate = self
+        // キャンセルボタンを表示
+        searchBar.showsCancelButton = true
     }
     
     // 検索ボタンを押した際の呼び出しメソッド
@@ -31,15 +33,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchBar.endEditing(true)
         guard let searchText = searchBar.text else {return}
     // 条件として、検索文字がcategoryと一致するものを検索
-        let result = realm.objects(Task.self).filter("category CONTAINS '\(searchText)'")
-    // 検索結果の件数を取得
-        let count = result.count
-        if (count == 0) {
-            taskArray = realm.objects(Task.self)
-        } else {
-            taskArray = result
-        }
-            tableView.reloadData()
+        taskArray = realm.objects(Task.self).filter("category CONTAINS '\(searchText)'")
+        tableView.reloadData()
+    }
+    
+    // キャンセルボタンを押した際の呼び出しメソッド（タップされたら検索を終了して全タスク表示に戻す）
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        taskArray = realm.objects(Task.self)
+        tableView.reloadData()
     }
     
     // データの数（＝セルの数）を返すメソッド
